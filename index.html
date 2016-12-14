@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!-- All Rights Reserved! -->
+<html >
+<head>
+<meta charset="UTF-8">
+<title>Trials | Web</title>
+<style>
+* {margin:0px; padding: 0px;}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  color: white;
+  font-size: 34px;
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+  margin: 0px auto;
+}
+
+.section {
+  width: 50%;
+  height: 50%;
+  overflow: hidden;
+  float: left;
+  position: relative;
+  /*cursor: pointer;*/
+  -webkit-box-shadow: 2px 2px 5px 2px #ccc;
+  -moz-box-shadow: 2px 2px 5px 2px #ccc;
+  box-shadow: 2px 2px 5px 2px #ccc;
+}
+
+.clear {
+  clear: both;
+}
+
+.v-parent {
+  position: relative;
+}
+.v-child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+a {
+  text-decoration: none;
+}
+</style>
+</head>
+<body>
+<div id="container">
+  <a href="dataviz">
+    <div class="section v-parent" style="background: #4885ed">
+      <h1 class="v-child">Data Visulization</h1>
+    </div>
+  </a>
+  <a href="presentation">
+    <div class="section v-parent" style="background: #3cba54">
+      <h1 class="v-child">Presentation</h1>
+    </div>
+  </a>
+  <a href="diagram">
+    <div class="section v-parent" style="background: #f4c20d">
+      <h1 class="v-child">Diagram</h1>
+    </div> 
+  </a>
+  <a href="framework">
+    <div class="section v-parent" style="background: #db3236">
+      <h1 class="v-child">Framework</h1>
+    </div>
+  </a>
+  <div class="clear"></div>
+</div>
+<script src="/global.js"></script>
+</body>
+</html>

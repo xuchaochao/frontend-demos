@@ -1,0 +1,60 @@
+<!doctype html>
+<!-- All Rights Reserved! -->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1024">
+    <title>Impress.js</title>
+    <link href="http://fonts.googleapis.com/css?family=Oswald:bold|Arvo:bold|Cutive+bold|Orbitron:bold|Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet">
+    <link href="../assets/css/reset.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <style>
+        .slide {
+            display: block;
+            width: 300px;
+            padding: 100px 200px;
+            height: 500px;
+            color:#fff;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 60px;
+        }
+    </style>
+</head>
+<body>
+<div id="impress">
+    <div id="overview" class="step" data-x="-1000" data-y="-500" data-scale="4"></div>
+
+    <div id="slide1" class="step slide" data-x="0" data-z="0" >
+        <div><h2>Slide 1</h2></div>
+    </div>
+
+    <div id="slide2" class="step slide" data-x="1000" data-z="1000" >
+        <div><h2>Slide 2</h2></div>
+    </div>
+
+    <div id="slide3" class="step slide" data-x="2000" data-z="2000" >
+        <div><h2>Slide 3</h2></div>
+    </div>
+
+    <div id="slide4" class="step slide" data-x="3000" data-z="3000" >
+        <div><h2>Slide 4</h2></div>
+    </div>
+
+    <div id="slide5" class="step slide" data-x="-1000" data-z="1000" >
+        <div><h2>Slide 5</h2></div>
+    </div>
+
+    <div id="slide6" class="step slide" data-x="-2000" data-z="2000" >
+        <div><h2>Slide 6</h2></div>
+    </div>
+
+    <div id="slide7" class="step slide" data-x="-3000" data-z="3000" >
+        <div><h2>Slide 7</h2></div>
+    </div>
+</div>
+<script src="../assets/js/impress.js"></script>
+<script>impress().init();</script>
+<script src="/global.js"></script>
+</body>
+</html>

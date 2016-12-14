@@ -1,0 +1,47 @@
+<!doctype html>
+<!-- All Rights Reserved! -->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1024">
+    <title>Impress.js</title>
+    <style>
+        .slide{
+            border: 30px solid #297999;
+            color: #395B91;
+            font-size: 40px;
+            font-weight:bold;
+            width:800px;
+            margin:20px;
+            padding:40px;
+            height:500px;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+<div id="impress" data-perspective="500" data-width="2048" data-height="1536" data-transition-duration="2000" data-min-scale="0" data-max-scale="0.5">
+
+    <div id="overview" class="step" data-x="-500" data-y="0" data-scale="2"></div>
+
+    <div id="slide1" class="step slide" data-x="-500">
+        <div><h2>Slide 1</h2></div>
+    </div>
+
+    <div id="slide2" class="step slide" data-x="500">
+        <div><h2>Slide 2</h2></div>
+    </div>
+
+    <div id="slide3" class="step slide" data-x="1500">
+        <div><h2>Slide 3</h2></div>
+    </div>
+
+    <div id="slide4" class="step slide" data-x="2500">
+        <div><h2>Slide 4</h2></div>
+    </div>
+</div>
+<script src="../assets/js/impress.js"></script>
+<script>impress().init();</script>
+<script src="/global.js"></script>
+</body>
+</html>

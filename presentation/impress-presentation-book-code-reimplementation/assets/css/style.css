@@ -1,0 +1,22 @@
+.step {
+    position: relative;
+    width: 900px;
+    margin: 20px auto;
+}
+
+.impress-enabled .step {
+	opacity: 0.5;
+}
+
+.impress-enabled .step.active { 
+	opacity: 1;
+}
+
+#overview { 
+	display: none;
+}
+
+.impress-on-overview .step {
+	opacity: 1;
+	cursor: pointer;
+}

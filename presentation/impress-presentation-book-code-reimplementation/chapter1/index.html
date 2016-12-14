@@ -1,0 +1,92 @@
+<!doctype html>
+<!-- All Rights Reserved! -->
+<html lang="en">
+<head>
+	<title>Impress.js </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=1024">
+	<link href="http://fonts.googleapis.com/css?family=Oswald:bold|Arvo:bold|Cutive+bold|Orbitron:bold|Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+	<link rel="stylesheet" href="../assets/css/reset.css">
+	<link rel="stylesheet" href="../assets/css/style.css">
+	<style>
+		.slide {
+			display: block;
+			width: 1000px;
+			height: 700px;
+			border-left:25px solid #eee;
+			color:#fff;
+		}
+
+		#intro{
+		    margin: 40px 0;
+		    line-height: 150%;
+		    font-size: 60px;
+		    font-weight: bold;
+		    text-align: center;
+		    width: 1000px;
+		    border:none;
+		    background: none;
+		    font-family: "PT Sans";
+		}
+
+		#intro .title1{
+		    color: #fff;
+		}
+
+		#intro .title2{
+		    color: #B33535;
+		    font-size: 70px;
+		    font-weight: bold;
+		}
+
+		.step .round{
+		    background: none repeat scroll 0 0 #2390C2;
+		    border: 20px solid;
+		    border-radius: 400px 400px 400px 400px;
+		    color: #FFFFFF;
+		    font-family: tahoma;
+		    font-size: 90px;
+		    font-weight: bold;
+		    height: 150px;
+		    margin: auto;
+		    padding: 250px 0;
+		    text-align: center;
+		    vertical-align: middle;
+		    width: 650px;
+		}
+	</style>
+</head>
+<body>
+<div id="impress">
+	<div id="overview" class="step" data-x="-1000" data-y="-1500" data-scale="5"></div>
+
+    <div id="intro" class="step slide" data-x="-1000" data-y="-1000" data-scale="3">
+        <div>
+        	<p class="title1">Building Impressive Presentations</p>
+            <p class="title1">with</p>
+            <p class="title2">Impress.js</p>
+        </div>
+    </div>
+
+    <div id="guidelines" class="step slide" data-x="-1000" data-y="-2500" >
+        <div class="round"><p>Step 1</p></div>
+            
+    </div>
+
+    <div id="graphic" class="step slide" data-x="1000" data-y="-1500" data-rotate="90">
+        <div class="round">Step 2</div>
+    </div>
+
+    <div id="typo" class="step slide" data-x="-1000" data-y="-500" data-rotate="180">
+        <div class="round">Step 3</div>
+    </div>
+
+    <div id="animations" class="step slide" data-x="-3000" data-y="-1500" data-rotate="270">
+        <div class="round">Step 4</div>
+    </div>
+</div>
+<script src="../assets/js/impress.js"></script>
+<script>impress().init();</script>
+<script src="/global.js"></script>
+</body>
+</html>

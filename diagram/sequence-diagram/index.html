@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!-- All Rights Reserved! -->
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sequence Diagram with sequence-diagram-min.js</title>
+<style>
+    .diagram {
+        text-align: center;
+    }
+</style>
+<script src="jquery.min.js"></script>
+<script src="underscore-min.js"></script>
+<script src="raphael-min.js"></script>
+<script src="sequence-diagram-min.js"></script>
+</head>
+<body>
+
+<!-- 
+<div class="diagram" id="diagram1">
+#Note left of A: Note to the\n left of A
+#Note right of A: Note to the\n right of A
+#Note over A: Note over A
+Note over A,B: Note over A,B
+</div>
+<script>
+var rawText = document.getElementById('diagram1').innerHTML;
+document.getElementById('diagram1').innerHTML = "";
+
+var diagram = Diagram.parse(rawText);
+diagram.drawSVG('diagram1', {theme: 'hand'});
+</script> 
+-->
+
+
+<!-- References: https://bramp.github.io/js-sequence-diagrams/ -->
+<div class="diagram">
+A->B: Message
+</div>
+
+<div class="diagram">
+Andrew->China: Says Hello
+Note right of China: China thinks\nabout it
+China-->Andrew: How are you?
+Andrew->>China: I am good thanks!
+</div>
+
+<div class="diagram">
+Title: Here is a title
+A->B: Normal line
+B-->C: Dashed line
+C->>D: Open arrow
+D-->>A: Dashed open arrow
+</div>
+
+<div class="diagram">
+# Example of a comment.
+Note left of A: Note to the\n left of A
+Note right of A: Note to the\n right of A
+Note over A: Note over A
+Note over A,B: Note over both A and B
+</div>
+
+<div class="diagram">
+participant C
+participant B
+participant A
+Note right of A: By listing the participants\n you can change their order
+</div>
+
+<script>
+$(".diagram").sequenceDiagram({theme: 'hand'});
+</script>
+<script src="/global.js"></script>
+</body>
+</html>
