@@ -1,77 +1,85 @@
 <!DOCTYPE html>
-<!-- All Rights Reserved! -->
 <html>
+
 <head>
-<meta charset="UTF-8">
-<title>Data Visulization | Trials</title>
-<link rel="stylesheet" href="http://cdn.bootcss.com/pure/0.4.2/pure-min.css">
-<style>
-body, input, button, textarea, select {
-    font-family: "Lucida Grande", "Helvetica Neue", Helvetica, Arial, Verdana, "PingFang SC", "Hiragino Sans GB", STHeiti, "Microsoft YaHei", "WenQuanYi Micro Hei", "WenQuanYi Micro Hei Mono", "WenQuanYi Zen Hei", "WenQuanYi Zen Hei Mono", "Noto Sans CJK SC", "Source Han Sans CN", SimSun, sans-serif;
-}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Frontend Demos - Dataviz</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
 
-a {
-    color: #3b8bba;
-    text-decoration: none;
-}
+    .header {
+      background: #222;
+    }
 
-a:hover {
-    color: #265778;
-}
+    .header a {
+      display: inline-block;
+      padding: .5em;
 
-#nav {
-    background: #222;
-}
+      color: #ddd;
+      text-decoration: none;
+    }
 
-#nav a {
-    color: #ddd;
-    text-decoration: none;
-    padding: .5em;
-    display: inline-block;
-}
+    .header a:hover {
+      color: #eee;
+    }
 
-#nav a:hover {
-    color: #eee;
-}
+    .headline,
+    .main {
+      margin: 0 auto;
+    }
 
-#header, #main {
-    margin: 0 auto;
-    max-width: 768px;
-}
+    .headline {
+      max-width: 768px;
+      border-bottom: 1px solid #eee;
+      padding: 1em;
 
-#header {
-    padding: 1em;
-    border-bottom: 1px solid #eee;
-    text-align: center;
-}
+      text-align: center;
+    }
 
-#header h1 {
-    margin: 0;
-    color: #444;
-    font-size: 120%;
-}
+    .headline h1 {
+      margin: 0;
+      color: #444;
+      font-size: 120%;
+    }
 
-#main { max-width: 400px }
-</style>
+    .main {
+      max-width: 400px
+    }
+
+    .main a {
+      padding: .5em;
+
+      color: #454545;
+      text-decoration: none;
+    }
+
+    .main a:hover {
+      color: #343434;
+      text-decoration: underline;
+    }
+  </style>
 </head>
+
 <body>
-<div id="nav">
-	<a href="../">Trials</a>
-</div>
+  <div class="header">
+    <a href="../">Home</a>
+  </div>
 
-<div id="header">
-    <h1>Data Visulization</h1>
-</div>
+  <div class="headline">
+    <h1>Dataviz Demos</h1>
+  </div>
 
-<div id="main">
-	<div class="pure-menu pure-menu-open">
-		<ul>
-            <li><a href="Chart" target="_blank">Chart.js Trial</a></li>
-            <li><a href="chartist" target="_blank">chartist.js Trial</a></li>
-            <li><a href="highcharts" target="_blank">highcharts.js Trial</a></li>
-		</ul>
-	</div>
-</div>
-<script src="/global.js"></script>
+  <div class="main">
+    <ul>
+      <li><a href="Chart" target="_blank">Chart.js Demo</a></li>
+      <li><a href="chartist" target="_blank">chartist.js Demo</a></li>
+      <li><a href="highcharts" target="_blank">highcharts.js Demo</a></li>
+    </ul>
+  </div>
+
 </body>
+
 </html>
